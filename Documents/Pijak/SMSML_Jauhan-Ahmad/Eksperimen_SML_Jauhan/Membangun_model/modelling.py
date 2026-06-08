@@ -2,10 +2,9 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import mlflow
-import dagshub
 
-# Inisialisasi DagsHub (Ganti dengan Username dan Nama Repo DagsHub-mu!)
-dagshub.init(repo_owner='jauhan18', repo_name='Submission-MLOps', mlflow=True)
+# Cukup set nama eksperimennya saja, biarkan MLflow otomatis membuat folder mlruns
+mlflow.set_experiment("Eksperimen_Lokal_Jauhan")
 
 # 1. Load Data
 df = pd.read_csv('C:\\Users\\Jauhanunu\\Documents\\Pijak\\SMSML_Jauhan-Ahmad\\Eksperimen_SML_Jauhan\\Membangun_model\\dataset_preprocessing\\data_bersih.csv')

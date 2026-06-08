@@ -1,0 +1,9 @@
+pandas
+scikit-learn
+mlflow
+dagshub
+Flask
+prometheus-client
+psutil
+matplotlib
+seaborn
